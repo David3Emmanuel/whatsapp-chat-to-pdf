@@ -31,6 +31,32 @@ export default function Home() {
           <ReactMarkdown>{processChat(text)}</ReactMarkdown>
         </div>
       </div>
+      <div className='p-4'>
+        <h2 className='text-xl font-bold'>
+          Instructions to Convert WhatsApp Chat to PDF
+        </h2>
+        <ol className='list-decimal list-inside'>
+          <li>Open WhatsApp and go to the chat you want to export.</li>
+          <li>
+            Tap on the three dots in the top right corner and select
+            &quot;More&quot;.
+          </li>
+          <li>
+            Select &quot;Export chat&quot; and choose whether to include media
+            or not.
+          </li>
+          <li>
+            Choose a method to share the exported chat (e.g., email, Google
+            Drive).
+          </li>
+          <li>Download the exported chat file to your device.</li>
+          <li>Copy and paste the chat text into the textarea above.</li>
+          <li>
+            Click the &quot;Print Output&quot; button to print the chat as a
+            PDF.
+          </li>
+        </ol>
+      </div>
     </>
   )
 }
