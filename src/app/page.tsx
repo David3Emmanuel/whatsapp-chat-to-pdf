@@ -21,7 +21,7 @@ export default function Home() {
           Print Output
         </button>
       </div>
-      <div className='flex flex-wrap bg-gray-500 text-black items-stretch p-4 gap-4 min-h-screen overflow-y-auto'>
+      <div className='flex flex-wrap bg-gray-500 text-black items-stretch p-4 max-sm:p-0 gap-4 min-h-screen overflow-y-auto'>
         <textarea
           className='min-w-96 flex-1 p-4 text-lg bg-white'
           value={text}
