@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
+import Link from 'next/link'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,6 +30,12 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <p className='text-center mb-3 text-white'>
+        Made by{' '}
+        <Link className='underline' href='https://github.com/David3Emmanuel'>
+          David Emmanuel
+        </Link>
+      </p>
     </html>
   )
 }
